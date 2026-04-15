@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "furniture-store-2",
+    "staging": "furniture-store-2-a3c95"
+  },
+  "targets": {},
+  "etags": {}
+}
