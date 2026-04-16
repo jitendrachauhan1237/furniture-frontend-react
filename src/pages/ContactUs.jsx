@@ -41,7 +41,7 @@ const ContactUs = () => {
             <Mail className="mt-1 h-6 w-6 text-orange-500" />
             <div>
               <h3 className="text-lg font-semibold text-gray-800">Email Us</h3>
-              <p className="text-sm text-gray-600">hello@furnilux.demo</p>
+              <p className="text-sm text-gray-600">hello@furnivia.demo</p>
             </div>
           </div>
 

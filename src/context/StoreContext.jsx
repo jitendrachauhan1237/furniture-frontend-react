@@ -11,7 +11,7 @@ import {
   mockTestimonials,
 } from "../data/mockStore";
 
-const STORAGE_KEY = "furnilux-demo-store";
+const STORAGE_KEY = "furnivia-demo-store";
 
 const initialStore = {
   currentUser: demoUser,

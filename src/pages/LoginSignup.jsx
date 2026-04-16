@@ -11,7 +11,7 @@ const LoginSignup = () => {
   const { login } = useStore();
 
   const [isLogin, setIsLogin] = useState(true);
-  const [email, setEmail] = useState("aarav.demo@furnilux.com");
+  const [email, setEmail] = useState("aarav.demo@furnivia.com");
   const [password, setPassword] = useState("demo1234");
   const [confirmPass, setConfirmPass] = useState("demo1234");
   const [error, setError] = useState("");
@@ -34,7 +34,7 @@ const LoginSignup = () => {
   };
 
   const handleGoogleSignIn = () => {
-    login({ email: "google.demo@furnilux.com" });
+    login({ email: "google.demo@furnivia.com" });
     navigate("/", { replace: true });
   };
 
@@ -53,7 +53,7 @@ const LoginSignup = () => {
           </div>
           <div className="rounded-3xl bg-white/10 p-6">
             <p className="text-sm text-orange-100">Demo account</p>
-            <p className="mt-2 font-semibold">aarav.demo@furnilux.com</p>
+            <p className="mt-2 font-semibold">aarav.demo@furnivia.com</p>
             <p className="text-sm text-orange-100">Password: demo1234</p>
           </div>
         </div>

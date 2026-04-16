@@ -50,7 +50,7 @@ const Footer = () => {
             <Link to="/shop" className="hover:underline">Collections</Link>
           </div>
         </div>
-        <div className="text-center">© FurniLux Demo Store 2026</div>
+        <div className="text-center">© furnivia Demo Store 2026</div>
       </div>
     </footer>
   );

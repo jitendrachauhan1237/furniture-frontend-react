@@ -75,7 +75,7 @@ const Navbar = () => {
       {searchResults.map((product) => (
         <li
           key={product._id}
-          className="flex items-center gap-3 px-3 py-2 hover:bg-orange-50 cursor-pointer"
+          className="flex items-center gap-3 px-3 py-2 hover:bg-amber-50 cursor-pointer"
           onClick={() => handleResultClick(product._id)}
         >
           <img
@@ -85,7 +85,7 @@ const Navbar = () => {
           />
           <div>
             <p className="text-sm font-medium text-gray-700">{product.title}</p>
-            <p className="text-xs text-orange-500">{product.category}</p>
+            <p className="text-xs text-amber-500">{product.category}</p>
           </div>
         </li>
       ))}
@@ -97,7 +97,7 @@ const Navbar = () => {
       <ProfileDrawer ref={drawerCheckboxRef} />
       <div
         className={`fixed left-0 right-0 top-0 z-30 w-full transition-colors duration-500 ${
-          isScrolled ? "bg-white/90 backdrop-blur-lg shadow-sm" : "bg-transparent"
+          isScrolled ? "bg-white/20 backdrop-blur-lg " : "bg-transparent"
         }`}
       >
         <div className="mx-auto w-full max-w-screen-2xl px-6 py-4 md:px-16">
@@ -112,12 +112,12 @@ const Navbar = () => {
               </button>
             </div>
 
-            <div className="mx-auto text-xl font-bold text-orange-500 md:mx-0 md:mr-6">
-              <Link to="/">FurniLux</Link>
+            <div className="mx-auto text-xl font-bold text-amber-500 md:mx-0 md:mr-6">
+              <Link to="/"><img src="src/assets/logo.png" alt="" className="h-10"/></Link>
             </div>
 
             <div className="hidden items-center space-x-6 text-sm font-medium text-gray-700 md:flex">
-              <Link to="/" className="text-orange-500">Home</Link>
+              <Link to="/" className="text-amber-500">Home</Link>
 
               <div
                 className="relative"
@@ -126,7 +126,7 @@ const Navbar = () => {
               >
                 <button
                   onClick={() => setShowMegaMenu(!showMegaMenu)}
-                  className="flex items-center gap-1 font-semibold text-gray-800 hover:text-orange-500"
+                  className="flex items-center gap-1 font-semibold text-gray-800 hover:text-amber-500"
                 >
                   Shop <ChevronDown className="h-4 w-4" />
                 </button>
@@ -138,14 +138,14 @@ const Navbar = () => {
                         <Link
                           key={cat}
                           to={`/shop?category=${encodeURIComponent(cat)}`}
-                          className="group flex items-center rounded-lg px-3 py-2 transition hover:bg-orange-50"
+                          className="group flex items-center rounded-lg px-3 py-2 transition hover:bg-amber-50"
                           onClick={() => setShowMegaMenu(false)}
                         >
                           <div className="flex w-full items-center justify-between">
-                            <span className="text-sm font-medium text-gray-700 group-hover:text-orange-600">
+                            <span className="text-sm font-medium text-gray-700 group-hover:text-amber-600">
                               {cat}
                             </span>
-                            <CircleArrowRight className="h-4 w-4 text-orange-400" />
+                            <CircleArrowRight className="h-4 w-4 text-amber-400" />
                           </div>
                         </Link>
                       ))}
@@ -154,9 +154,9 @@ const Navbar = () => {
                 </AnimatePresence>
               </div>
 
-              <Link to="/about" className="hover:text-orange-500">About</Link>
-              <Link to="/contact" className="hover:text-orange-500">Contact</Link>
-              <Link to="/adminpanel" className="hover:text-orange-500">Demo Admin</Link>
+              <Link to="/about" className="hover:text-amber-500">About</Link>
+              <Link to="/contact" className="hover:text-amber-500">Contact</Link>
+              <Link to="/adminpanel" className="hover:text-amber-500">Demo Admin</Link>
             </div>
 
             <div
@@ -203,7 +203,7 @@ const Navbar = () => {
                 <Link to="/cart">
                   <ShoppingCart size={20} className="text-gray-700" />
                 </Link>
-                <span className="absolute -right-2 -top-2 rounded-full bg-orange-500 px-1 text-xs text-white">
+                <span className="absolute -right-2 -top-2 rounded-full bg-amber-500 px-1 text-xs text-white">
                   {cartCount}
                 </span>
               </div>
@@ -282,7 +282,7 @@ const Navbar = () => {
                               setIsMenuOpen(false);
                               setShowMegaMenu(false);
                             }}
-                            className="text-gray-700 hover:text-orange-500"
+                            className="text-gray-700 hover:text-amber-500"
                           >
                             {cat}
                           </Link>

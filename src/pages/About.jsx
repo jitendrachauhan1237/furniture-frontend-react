@@ -9,12 +9,12 @@ const AboutUs = () => {
     <div className="mx-auto max-w-screen-2xl px-4 pb-10 pt-28 text-gray-800 md:px-16">
       <div className="mb-16 flex flex-col items-center justify-between gap-10 rounded-[2rem] bg-gradient-to-r from-[#fef0d8] to-[#f7f2ea] p-10 shadow-xl md:flex-row md:p-16">
         <div className="max-w-2xl">
-          <p className="mb-4 text-xs uppercase tracking-[0.35em] text-gray-500">About FurniLux</p>
+          <p className="mb-4 text-xs uppercase tracking-[0.35em] text-gray-500">About furnivia</p>
           <h1 className="mb-4 text-4xl font-extrabold md:text-6xl">
             Crafting warm, modern homes with thoughtful furniture stories.
           </h1>
           <p className="text-lg text-gray-700">
-            FurniLux is built as a premium demo storefront where every page feels connected, curated, and ready for a real product brand.
+            furnivia is built as a premium demo storefront where every page feels connected, curated, and ready for a real product brand.
           </p>
         </div>
         <img src="/sofa.webp" alt="Luxury Sofa" className="w-full max-w-sm" />

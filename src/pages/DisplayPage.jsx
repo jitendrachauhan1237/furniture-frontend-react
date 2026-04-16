@@ -108,7 +108,7 @@ const ProductDisplayPage = () => {
                 if (navigator.share) {
                   navigator.share({
                     title: product.title,
-                    text: `Check out ${product.title} on FurniLux`,
+                    text: `Check out ${product.title} on furnivia`,
                     url: window.location.href,
                   });
                 } else {
