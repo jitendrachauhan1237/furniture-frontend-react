@@ -4,20 +4,25 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="mx-auto max-w-screen-2xl bg-[#fefefe] font-sans text-sm text-gray-800">
-      <div className="grid grid-cols-1 md:grid-cols-3">
-        <div className="rounded-tl-xl bg-[#f3ddcb] p-6">
+    <footer className="w-full font-sans bg-orange-100 text-gray-800">
+      
+      {/* Top Section */}
+      <div className="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+        
+        {/* Social */}
+        <div>
           <p className="mb-2 text-sm font-medium">Get Social</p>
           <h3 className="mb-4 text-lg font-semibold">Connect with us</h3>
           <div className="flex space-x-4 text-xl">
-            <FaFacebookF />
-            <FaTwitter />
-            <FaYoutube />
-            <FaInstagram />
+            <a href="#"><FaFacebookF /></a>
+            <a href="#"><FaTwitter /></a>
+            <a href="#"><FaYoutube /></a>
+            <a href="#"><FaInstagram /></a>
           </div>
         </div>
 
-        <div className="bg-[#bfd7b5] p-6">
+        {/* Quick Links */}
+        <div>
           <h3 className="mb-4 text-xl font-bold">Quick Links</h3>
           <ul className="space-y-2 text-lg font-semibold">
             <li><Link to="/">Home</Link></li>
@@ -28,7 +33,8 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="rounded-tr-xl bg-[#e6937a] p-6">
+        {/* Notes */}
+        <div>
           <h3 className="mb-4 text-xl font-bold">Demo Notes</h3>
           <ul className="space-y-2 text-lg font-semibold">
             <li>Fake data powered</li>
@@ -37,20 +43,30 @@ const Footer = () => {
             <li>Portfolio ready UI</li>
           </ul>
         </div>
+
       </div>
 
-      <div className="flex flex-col items-center justify-between bg-black px-6 py-6 text-xs text-white md:flex-row md:px-20">
-        <div className="mb-4 flex items-center gap-3 md:mb-0">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white font-bold text-black">
-            FL
+      {/* Bottom Bar */}
+      <div className="w-full bg-amber-800 text-white">
+        <div className="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-6 text-xs">
+          
+          <div className="mb-4 md:mb-0 flex items-center gap-3">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white font-black text-amber-800">
+              F
+            </div>
+
+            <div className="flex flex-wrap gap-4">
+              <Link to="/contact" className="hover:underline">Contact</Link>
+              <Link to="/about" className="hover:underline">Brand Story</Link>
+              <Link to="/shop" className="hover:underline">Collections</Link>
+            </div>
           </div>
-          <div className="flex flex-wrap gap-4">
-            <Link to="/contact" className="hover:underline">Contact</Link>
-            <Link to="/about" className="hover:underline">Brand Story</Link>
-            <Link to="/shop" className="hover:underline">Collections</Link>
+
+          <div className="text-center md:text-right">
+            © furnivia Demo Store 2026
           </div>
+
         </div>
-        <div className="text-center">© furnivia Demo Store 2026</div>
       </div>
     </footer>
   );
